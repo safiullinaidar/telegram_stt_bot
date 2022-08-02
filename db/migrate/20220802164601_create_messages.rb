@@ -6,7 +6,7 @@ class CreateMessages < ActiveRecord::Migration[7.0]
       t.string :file_id
       t.integer :duration
       t.string :recognized_text
-      t.string :recognition_id
+      t.string :recognition_id, index: true
       t.bigint :response_message_id
 
       t.timestamps

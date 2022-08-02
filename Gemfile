@@ -10,6 +10,7 @@ gem "resque"
 gem "redis", "<4"
 gem "dotenv-rails"
 gem "httparty"
+gem "aws-sdk-s3", require: false
 
 gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
 gem "bootsnap", require: false

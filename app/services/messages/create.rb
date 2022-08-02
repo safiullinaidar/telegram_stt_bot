@@ -9,6 +9,15 @@ module Messages
 
       message = create_message!
 
+      sent_message_id = 
+        Telegram::SendMessage.call(
+          message.chat_id, 
+          "Ваше сообщение обрабатывается", 
+          reply_to: message.message_id
+        )
+
+      message.update!(response_message_id: sent_message_id)
+
       YandexSttJob.perform_later(message.id)
     end
 

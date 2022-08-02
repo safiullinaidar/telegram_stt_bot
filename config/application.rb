@@ -38,5 +38,9 @@ module TelegramSttBot
 
     ::TELEGRAM_BOT_TOKEN = ENV.fetch("TELEGRAM_BOT_TOKEN").freeze
     ::YANDEX_API_KEY = ENV.fetch("YANDEX_API_KEY").freeze
+    
+    ::YANDEX_ACCESS_KEY_ID = ENV.fetch("YANDEX_ACCESS_KEY_ID").freeze
+    ::YANDEX_SECRET_ACCESS_KEY = ENV.fetch("YANDEX_SECRET_ACCESS_KEY").freeze
+    ::YANDEX_BUCKET_NAME = ENV.fetch("YANDEX_BUCKET_NAME").freeze
   end
 end

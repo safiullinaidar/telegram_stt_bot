@@ -16,7 +16,7 @@ module Yandex
     attr_reader :file_path
 
     def parsed_response
-      @parsed_response ||= HTTParty.post(API_URL, query: query, headers: headers, body: body)
+      @parsed_response ||= HTTParty.post(API_URL, query: query, headers: headers, body: body).parsed_response
     end
 
     def query

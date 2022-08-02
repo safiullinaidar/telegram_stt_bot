@@ -7,7 +7,7 @@ module Telegram
     end
 
     def call
-      parsed_response["message_id"]
+      parsed_response.dig("result", "message_id")
     end
 
     private
