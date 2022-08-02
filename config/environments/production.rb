@@ -72,4 +72,7 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+
+  config.active_job.queue_adapter = :resque
+  config.active_job.queue_name_prefix = "telegram_stt_bot_#{Rails.env}"
 end

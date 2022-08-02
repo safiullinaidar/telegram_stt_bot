@@ -6,4 +6,8 @@ class Message < ApplicationRecord
   def sync_stt_available?
     duration <= SYNC_STT_LIMIT
   end
+
+  def tmp_file_name
+    "#{chat_id}_#{message_id}.ogg"
+  end
 end

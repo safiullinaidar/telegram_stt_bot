@@ -6,6 +6,9 @@ ruby "3.0.0"
 gem "rails", "~> 7.0.3"
 gem "pg", "~> 1.1"
 gem "puma", "~> 5.0"
+gem "resque"
+gem "dotenv-rails"
+gem "httparty"
 
 gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
 gem "bootsnap", require: false

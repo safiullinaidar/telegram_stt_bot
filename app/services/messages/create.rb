@@ -8,6 +8,8 @@ module Messages
       return unless voice_message?
 
       message = create_message!
+
+      YandexSttJob.perform_later(message.id)
     end
 
     private
